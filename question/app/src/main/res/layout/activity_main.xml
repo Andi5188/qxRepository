@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_black"
+    tools:context=".MainActivity">
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <LinearLayout
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <ImageView
+               android:background="@mipmap/icon_1"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" />
+
+           <FrameLayout
+               android:id="@+id/content"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               >
+           </FrameLayout>
+
+           <ImageView
+               android:background="@mipmap/icon_3"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" />
+       </LinearLayout>
+
+   </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:text="我要评价"
+            android:id="@+id/bt_dilog"
+            android:layout_width="100dp"
+            android:layout_height="50dp" />
+
+        <Button
+            android:text="隐藏评价"
+            android:id="@+id/bt_dilog_2"
+            android:layout_width="100dp"
+            android:layout_height="50dp" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

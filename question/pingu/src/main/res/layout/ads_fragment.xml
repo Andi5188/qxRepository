@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res/com.test.test"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/icon_2"
+    android:layout_height="250dp">
+
+    <FrameLayout
+        android:background="@color/color_white"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/content_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:layout_gravity="top"
+            android:textColor="@color/color_black"
+            android:gravity="center"
+            android:text="您使用i深圳的概率？"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            />
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <com.test.pingu.views.MatchSupportProgressBar
+                android:id="@+id/progressbar_match_support_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:progress="30"
+                android_custom:progress_background_color="#D9D9D9"
+                android_custom:progress_background_height="30dp"
+                android_custom:progress_offsetR="20dp"
+                android_custom:progress_percent_text_color="#808080"
+                android_custom:progress_percent_text_size="13sp"
+                android_custom:progress_reach_color="#26A5F9"
+                android_custom:progress_tag_text_color="#ffffff"
+                android_custom:progress_tag_text="每月超过三次"
+                android_custom:progress_tag_text_size="13sp" />
+
+
+            <com.test.pingu.views.MatchSupportProgressBar
+                android:id="@+id/progressbar_match_support_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:progress="30"
+                android_custom:progress_background_color="#D9D9D9"
+                android_custom:progress_background_height="30dp"
+                android_custom:progress_offsetR="20dp"
+                android_custom:progress_percent_text_color="#808080"
+                android_custom:progress_percent_text_size="13sp"
+                android_custom:progress_reach_color="#26A5F9"
+                android_custom:progress_tag_text_color="#ffffff"
+                android_custom:progress_tag_text="每月俩到三次"
+                android_custom:progress_tag_text_size="13sp" />
+
+            <com.test.pingu.views.MatchSupportProgressBar
+                android:id="@+id/progressbar_match_support_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:progress="30"
+                android_custom:progress_background_color="#D9D9D9"
+                android_custom:progress_background_height="30dp"
+                android_custom:progress_offsetR="20dp"
+                android_custom:progress_percent_text_color="#808080"
+                android_custom:progress_percent_text_size="13sp"
+                android_custom:progress_reach_color="#26A5F9"
+                android_custom:progress_tag_text_color="#ffffff"
+                android_custom:progress_tag_text="每月一次"
+                android_custom:progress_tag_text_size="13sp" />
+
+            <com.test.pingu.views.MatchSupportProgressBar
+                android:id="@+id/progressbar_match_support"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:progress="30"
+                android_custom:progress_background_color="#D9D9D9"
+                android_custom:progress_background_height="30dp"
+                android_custom:progress_offsetR="20dp"
+                android_custom:progress_percent_text_color="#808080"
+                android_custom:progress_percent_text_size="13sp"
+                android_custom:progress_reach_color="#26A5F9"
+                android_custom:progress_tag_text_color="#ffffff"
+                android_custom:progress_tag_text="少于每月一次"
+                android_custom:progress_tag_text_size="13sp" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+</LinearLayout>

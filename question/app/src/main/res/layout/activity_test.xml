@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_black">
+
+    <com.test.test.HeaderBar
+        android:id="@+id/header_bar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        />
+
+    <RelativeLayout
+        android:layout_marginTop="55dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:background="@mipmap/activity_test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_alignParentBottom="true"
+                android:id="@+id/done_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textColor="@color/color_white"
+                android:text="我要建议"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_gravity="bottom"
+                android:background="@drawable/blue_btn_selector"
+                android:layout_marginBottom="40dp"
+                />
+
+            <Button
+                android:layout_alignParentBottom="true"
+                android:id="@+id/done_btn_2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textColor="@color/color_white"
+                android:text="我要评价"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_gravity="bottom"
+                android:background="@drawable/blue_btn_selector"
+                android:layout_marginBottom="40dp"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

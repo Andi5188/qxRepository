@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/layout_dialog_id"
+    android:layout_width="match_parent"
+    android:background="@color/color_grey"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:background="@color/color_white"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/content_txt"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:layout_gravity="top"
+                        android:textColor="@color/color_black"
+                        android:gravity="center|left"
+                        android:text="您觉得哪方面需要优化？"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:textStyle="bold"
+                        />
+
+                    <ImageView
+                        android:id="@+id/img_close"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/close"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:textColor="@color/color_grey"
+                    android:gravity="center|left"
+                    android:text="可多选"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="70dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/txt_1_id"
+                        android:background="@drawable/gray_txt_selector"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:textSize="16dp"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/color_white"
+                        android:gravity="center|left"
+                        android:text=" 流程简易度 "
+                        />
+
+                    <TextView
+                        android:id="@+id/txt_2_id"
+                        android:background="@drawable/gray_txt_selector"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:textSize="16dp"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/color_white"
+                        android:gravity="center|left"
+                        android:text=" 表单填写简易度 "
+                        android:layout_marginLeft="10dp"
+
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/txt_3_id"
+                        android:focusable="true"
+                        android:background="@drawable/gray_txt_selector"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:textSize="16dp"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/color_white"
+                        android:gravity="center|left"
+                        android:text=" 材料解释清晰度 "
+                        android:enabled="true"
+                        />
+
+                    <TextView
+                        android:enabled="true"
+                        android:id="@+id/txt_4_id"
+                        android:background="@drawable/gray_txt_selector"
+                        android:layout_width="wrap_content"
+                        android:focusable="true"
+                        android:layout_height="30dp"
+                        android:textSize="16dp"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/color_white"
+                        android:gravity="center|left"
+                        android:text=" 办理条件清晰度 "
+                        android:layout_marginLeft="10dp"
+                        />
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/ok_btn"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:textColor="@color/color_white"
+                    android:text="确定"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:layout_gravity="bottom|center"
+                    android:background="@drawable/blue_btn_selector"
+                    android:layout_marginBottom="40dp"
+                    />
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
